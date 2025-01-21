@@ -14,8 +14,8 @@ export function Card({ title, text, img, alt, children, imgClick }) {
   return (
     <div className={style.cardStyling}>
       {title && {title}}
-      {text && {text}}
       {img && <img src={imageSrc} alt={alt} onClick={imgClick}/>}
+      {text && {text}}
       {children}
     </div>
   )
